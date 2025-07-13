@@ -6,7 +6,7 @@ console.log(
   typeof dummyDoc.useServiceAccountAuth
 );
 
-const creds = require("./credentials.json");
+const creds = JSON.parse(process.env.GOOGLE_CREDENTIALS);
 
 const SHEET_ID = "1Fbuh7QHBouEUicdfiYwuaV6yXjpZU7AiTjFHgavUETg";
 const SHEET_TAB_INDEX = 0;
